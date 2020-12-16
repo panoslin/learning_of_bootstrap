@@ -67,7 +67,17 @@
 					</p>
 				</div>
 				<div class="col-12 col-sm align-self-center">
-					<img src="img/logo.png" class="img-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="img/logo.png" class="img-fluid">
+						</div>
+						<div class="col-md-6 align-self-center">
+							<div class="btn-group" role="group">
+								<a role="button" class="btn btn-warning" href="#reserve-form">Reserve Table</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -79,7 +89,7 @@
 
 		<div class="row row-content align-items-center">
 			<div class="col-12 col-sm-4 order-sm-last col-md3">
-				<h2>Meet up</h3>
+				<h3>Ours Lipsmacking Culinary Creations</h3>
 			</div>
 			<div class="col col-sm order-sm-first col-md">
 				<div class="media">
@@ -107,15 +117,17 @@
 
 		<div class="row row-content align-items-center">
 			<div class="col-12 col-sm-4 order-sm-first col-md3">
-				<h2>Meet up</h3>
+				<h3>This Month's Promotions</h3>
 			</div>
 			<div class="col col-sm order-sm-last col-md">
 				<div class="media">
-					<img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png"
-						alt="Alberto Somayya">
 					<div class="media-body">
-						<h2 class="mt-0">Alberto Somayya</h2>
-						<h4>Executive Chef</h4>
+						<h2 class="mt-0">
+							Weekend Grand Buffet
+							<span class="badge badge-danger">
+								NEW
+							</span>
+						</h2>
 						<p class="d-none d-sm-block">
 							Award winning three-star Michelin chef with wide
 							International experience having worked closely with
@@ -123,6 +135,7 @@
 							creating mouthwatering Indo-Italian fusion experiences.
 						</p>
 					</div>
+					<img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Alberto Somayya">
 				</div>
 			</div>
 		</div>
@@ -148,6 +161,86 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="row row-content">
+			<div class="col col-sm-8 offset-sm-2">
+				<div class="card">
+					<h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+					<div class="card-body" id="reserve-form">
+						<form>
+
+							<div class="form-group row">
+								<label for="number_of_guest" class="col-md-2 col-form-label">
+									Number of Guests
+								</label>
+								<div class="col-md-10">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="number_of_guest"
+											id="number_of_guest1" value="1" checked>
+										<label class="form-check-label" for="exampleRadios1">
+											1
+										</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="number_of_guest"
+											id="number_of_guest2" value="2">
+										<label class="form-check-label" for="exampleRadios2">
+											2
+										</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="number_of_guest"
+											id="number_of_guest3" value="3">
+										<label class="form-check-label" for="exampleRadios3">
+											3
+										</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="number_of_guest"
+											id="number_of_guest4" value="4">
+										<label class="form-check-label" for="exampleRadios4">
+											4
+										</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="number_of_guest"
+											id="number_of_guest5" value="5">
+										<label class="form-check-label" for="exampleRadios3">
+											5
+										</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="number_of_guest"
+											id="number_of_guest6" value="6">
+										<label class="form-check-label" for="exampleRadios3">
+											6
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="date" class="col-12 col-md-2 col-form-label">Date and Time</label>
+								<div class="col-6 col-md-5">
+									<input type="date" class="form-control" id="date" name="date" placeholder="Date">
+								</div>
+								<div class="col-6 col-md-5">
+									<input type="time" class="form-control" id="time" name="time" placeholder="Time">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<div class="offset-md-2 col-md-10">
+									<button type="submit" class="btn btn-primary">Reserve</button>
+								</div>
+							</div>
+					</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 
 	<footer class="footer">
