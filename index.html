@@ -54,9 +54,13 @@
 				</ul>
 			</div>
 			<span class="navbar-text">
-				<a data-toggle="modal" data-target="#loginModal">
+				<a id="LoginModalToggler">
 					<span class="fa fa-sign-in"></span> Login
 				</a>
+				<!-- BELOW ARE OLD VERSION OF LOGIN MODAL CODES -->
+				<!-- <a data-toggle="modal" data-target="#loginModal">
+					<span class="fa fa-sign-in"></span> Login
+				</a> -->
 			</span>
 		</div>
 	</nav>
@@ -125,12 +129,18 @@
 						</div>
 						<div class="col-md-6 align-self-center">
 							<div class="btn-group" role="group">
-								<a data-toggle="modal" data-target="#ReserveFormModal"
+								<a class="btn btn-block nav-link btn-warning" data-html="true"
+									title="Or Call us at <br><strong>+852 12345678</strong>" 
+									data-placement="bottom" id="ReserveTableButton">
+									Reserve Table
+								</a>
+								<!-- BELOW ARE VERSEION 2 OF RESERVE FORM -->
+								<!-- <a data-toggle="modal" data-target="#ReserveFormModal"
 									class="btn btn-block nav-link btn-warning" data-html="true"
 									title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom">
 									Reserve Table
-								</a>
-								<!-- BELOW ARE OLD VERSEION OF RESERVE FORM -->
+								</a> -->
+								<!-- BELOW ARE VERSEION 1 OF RESERVE FORM -->
 								<!-- <a href="#reserve-form" class="btn btn-block nav-link btn-warning" data-toggle="tooltip"
 									data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>"
 									data-placement="bottom">
@@ -567,6 +577,12 @@
 					$("#carouselButton").children("span").addClass("fa-pause");
 					
 				};
+			});
+			$("#ReserveTableButton").click(function () {
+				$("#ReserveFormModal").modal()
+			});
+			$("#LoginModalToggler").click(function () {
+				$("#loginModal").modal()
 			});
 		});
 	</script>
